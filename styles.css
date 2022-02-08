@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    background-color: #201B2D;
+    color: #FFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;  
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    padding: 24px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 500;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 0.875rem;
+}
+
+
+.quote {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.line {
+    width: 7.63px;
+    height: 150px;
+    margin-right: 15.25px;
+    background-color: #FFF;
+}
+
+.quote p {
+    width: 80%;
+}
+
+.credits p {
+    font-size: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.pseudo {
+    font-weight: 900;
+}
+
+img {
+    width: 100vw;
+    /* height: 50vh; */
+    position: absolute;
+    right: -24px;
+}
+
+@media screen and (min-width:1024px){
+    main {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .text {
+        padding: 32px;
+    }
+    
+    .line {
+        width: 8px;
+        height: 104px;
+        margin-right: 15.25px;
+    }
+
+    .credits {
+        position: absolute;
+        bottom: 32px;
+    }
+
+    .credits p {
+        margin-bottom: 16px;
+    }
+
+    img {
+        height: 100vh;
+    }
+}
